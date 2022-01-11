@@ -8,7 +8,7 @@ const ProductCard = ({ title, image, price, rating, count }) => (
     <div className="product-info">
       <h4> {title} </h4> <h5> ${price} </h5>{" "}
       <h6>
-        Stars:{rating} -------- Sold:{count}
+        ✰{rating} Sold:{count}
       </h6>
     </div>
   </div>
