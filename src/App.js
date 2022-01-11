@@ -241,7 +241,6 @@ function App() {
 
   useEffect(() => {
     setItemArr(sortItems(catArr(chosenCat), sortBy));
-    console.log("efeect");
   }, [chosenCat, sortBy]);
 
   const sortItems = (arr, chosenSort) =>
@@ -259,7 +258,6 @@ function App() {
       ? arr.sort((a, b) => b.price - a.price)
       : {};
 
-  console.log("items");
   return (
     <>
       <Header
