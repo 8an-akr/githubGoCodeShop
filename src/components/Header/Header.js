@@ -11,6 +11,7 @@ const Header = ({ setCat, setSortBy, categories, sortOptions }) => {
           <select id="cat" onChange={(v) => setCat(v.target.value)}>
             {categories.map((category) => (
               <option
+                className="option"
                 key={category}
                 value={`${category}`}
               >{`${category}`}</option>
@@ -22,7 +23,7 @@ const Header = ({ setCat, setSortBy, categories, sortOptions }) => {
           <label>Sort by:</label>
           <select onChange={(v) => setSortBy(v.target.value)}>
             {sortOptions.map((sort) => (
-              <option key={sort} value={sort}>
+              <option className="option" key={sort} value={sort}>
                 {`${sort}`}
               </option>
             ))}

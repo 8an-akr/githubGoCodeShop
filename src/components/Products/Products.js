@@ -1,9 +1,9 @@
 import ProductCard from "../ProductCard/ProductCard";
 import "./Products.css";
 
-const Products = ({ itemArrByCat }) => (
+const Products = ({ itemArr }) => (
   <section className="products">
-    {itemArrByCat.map((item) => (
+    {itemArr.map((item) => (
       <ProductCard
         key={item.id}
         title={item.title}

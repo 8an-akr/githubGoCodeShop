@@ -25,3 +25,7 @@
     flex-direction: column;
   }
 }
+
+select:hover {
+  cursor: pointer;
+}
